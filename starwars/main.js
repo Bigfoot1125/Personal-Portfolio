@@ -1,9 +1,8 @@
-import { films } from '../starwars/data/films.js'
 import { people} from '../starwars/data/people.js'
-import { starships} from '../starwars/data/starships.js'
 
 
-const greetingDiv = document.querySelector('.greeting')
+
+const gallery = document.querySelector('.gallery')
 
 const maleButton = document.querySelector('#maleButton')
 const femaleButton = document.querySelector('#femaleButton')
@@ -29,7 +28,7 @@ const  otherCharacters = people.filter(person => {
     otherButton.addEventListener("click", (event) => {
                 populateDOM(otherCharacters)    
     })
-        //"url: "https://swapi.co/api/people/10/"
+        
 
         function getCharNumber(url){
             let end = url.lastIndexOf('/')
@@ -40,12 +39,17 @@ const  otherCharacters = people.filter(person => {
             return url.slice(start, end)
         }
 
-        //getCharNumber("https://swapi.co/api/people/1/")
+        function removeChildren() {
+            while (Element.firstChild) {
+                Element.removeChild(Element.firstChild);
+            }
+        }
         
 
     
 
 function populateDOM(Characters) {
+    removeChildren(gallery)
 Characters.forEach(person => {
     //need to extract the number from the person url property
     let charNum = getCharNumber(person.url)
@@ -63,11 +67,11 @@ Characters.forEach(person => {
     
     
     // add some way to handle user clicks on the image
-    imageItem.addEventListener("click", () => {
-        console.log("IT worked")
+    imageItem.addEventListener("click", event => {
+        console.log(event)
     })
     anchorWrap.appendChild(imageItem)
-    greetingDiv.appendChild(anchorWrap)
+    gallery.appendChild(anchorWrap)
     
     
 
