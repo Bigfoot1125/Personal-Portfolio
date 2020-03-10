@@ -1,4 +1,4 @@
-import { starships} from '../starwars/data/starships.js'
+import { starships} from '../data/starships.js'
 
 const nav = document.querySelector('.nav')
 
