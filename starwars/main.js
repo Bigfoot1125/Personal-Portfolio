@@ -1,4 +1,5 @@
 import { people } from '../starwars/data/people.js'
+import { getLastNumber, removeChildren} from 'utils.js'
 
 
 
@@ -30,20 +31,9 @@ otherButton.addEventListener("click", (event) => {
 })
 
 
-function getCharNumber(url) {
-    let end = url.lastIndexOf('/')
-    let start = end - 2
-    if (url.charAt(start) === '/') {
-        start++
-    }
-    return url.slice(start, end)
-}
 
-function removeChildren(element) {
-    while (element.firstChild) {
-        element.removeChild(element.firstChild);
-    }
-}
+
+
 
 
 
@@ -52,7 +42,7 @@ function populateDOM(Characters) {
     removeChildren(gallery)
     Characters.forEach(person => {
         //need to extract the number from the person url property
-        let charNum = getCharNumber(person.url)
+        let charNum = getLastNumber(person.url)
 
         let anchorWrap = document.createElement("a")
         anchorWrap.href = "#"
