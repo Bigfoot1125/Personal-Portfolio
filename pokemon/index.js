@@ -98,21 +98,21 @@ class Pokemon {
 }
 
 function addPokemon() {
-  let Thoremon = new Pokemon(190, 290, 'thoremon',
+  let Thoremon = new Pokemon(190, 290, 'Sir Bigfoot',
     [
       {
         ability: {
-        name: 'Thunder Belly'
+        name: 'Stomp'
         }
       },
       {
         ability: {
-        name: 'Beard Power'
+        name: 'Roar'
         }
       },
       {
         ability: {
-        name: 'Rancid Stench'
+        name: 'Hide'
         }
       }
   ])
