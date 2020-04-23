@@ -31,4 +31,8 @@ li {
 
 img{
     padding: 120px;
+    border-style: groove;
+    border-color: fuchsia;
+    border-width: 40px;
+    
 }
