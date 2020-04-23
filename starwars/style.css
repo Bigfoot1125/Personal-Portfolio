@@ -9,6 +9,7 @@ body{
 a > img {
     height: 18rem;
     margin: 4px;
+    
 }
 
 button {
@@ -16,4 +17,10 @@ button {
     background-color: blue;
     border-radius: 20px;
     padding: 8px;
+}
+
+img{
+    border-style: solid;
+    border-color: firebrick;
+    border-width: 10px;
 }
