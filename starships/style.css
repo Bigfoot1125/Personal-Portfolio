@@ -19,20 +19,25 @@ li {
 
 .container{
     display: flex;
+    background-color: black;
+    border-style: dotted;
+    border-color: blue;
+    border-width: 10px;
     
 }
     
 
 
 .nav{
-    border: solid 2px green;
+    border: solid 2px blue;
     padding-right: 1rem;
+    border-width: 10px;
+    border-style: dotted;
 }
 
 img{
     padding: 120px;
-    border-style: groove;
-    border-color: fuchsia;
-    border-width: 40px;
+    
+    
     
 }
