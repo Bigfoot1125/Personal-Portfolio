@@ -3,7 +3,7 @@
 }
 
 body{
-    background-color: #dfdfdf;
+    background-color: black;
 }
 
 a > img {
@@ -14,13 +14,30 @@ a > img {
 
 button {
     font-size: 2rem;
-    background-color: blue;
+    background-color: green;
     border-radius: 20px;
-    padding: 8px;
+    display: flex;
+
 }
 
 img{
     border-style: solid;
     border-color: firebrick;
     border-width: 10px;
+}
+
+#maleButton{
+    background-color: red;
+}
+
+#femaleButton {
+    background-color: greenyellow;
+}
+#otherButton{
+    background-color: darkmagenta;
+}
+h1 {
+    display: flex;
+    justify-content: center;
+
 }
