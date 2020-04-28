@@ -65,3 +65,28 @@ li {
   color: aqua;
 }
 
+#startButton {
+  padding: 14px 40px;
+  background-color: yellow;
+  border-radius: 12px;
+  transition-duration: 0.4s;
+  width: 100%;
+}
+
+#newButton {
+  padding: 14px 40px;
+  background-color: coral;
+  border-radius: 12px;
+  transition-duration: 0.4s;
+  width: 100%;
+}
+
+#startButton:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+
+#newButton:hover {
+  background-color: blue; 
+  color: white;
+}
