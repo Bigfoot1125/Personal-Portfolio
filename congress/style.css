@@ -18,10 +18,12 @@ figcaption{
 h1 {
     display: flex;
     justify-content: center;
+    text-shadow: 0 0 3px green;
 
 }
 
 img {
     border-style: solid;
     border-color: green;
+    box-shadow: 5px 5px;
 }
