@@ -13,7 +13,7 @@ body{
     display: flex;
     justify-content: flex-end;
     position: fixed;
-    background-color: rgb(47, 5, 126);
+    background-image: linear-gradient(blue, black);
     width: 100%;
 }
 
@@ -62,17 +62,19 @@ h1 {
     justify-content: space-evenly;
     margin: 6rem;
     flex-wrap: wrap;
+    
 }
 
 #contact a {
     text-decoration: none;
+    
 }
 footer {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 6rem;
-    background-color: darkcyan;
+    background-image: linear-gradient(blue, black);
     color: #fff;
     
 
@@ -86,4 +88,9 @@ footer {
 
 html {
     scroll-behavior: smooth;
+  }
+
+  a:hover {
+    background-color:white;
+    opacity: 0.5;
   }

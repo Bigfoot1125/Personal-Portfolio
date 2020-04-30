@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  background-color: pink
+  background-image: linear-gradient(black, blue);
 }
 
 .scene {
@@ -12,6 +12,8 @@
   margin: 10px;
   perspective: 600px;
   border-radius: 40px;
+  background-image: linear-gradient(black, blue);
+
 }
 
 .card {
@@ -57,7 +59,7 @@ h1 {
   display: flex;
   justify-content: center;
   border-style: solid;
-  border-color: green;
+  border-color:white;
 }
 
 li {
@@ -66,11 +68,15 @@ li {
 }
 
 #startButton {
+  display: flex;
   padding: 14px 40px;
-  background-color: yellow;
+  background-color: coral;
   border-radius: 12px;
   transition-duration: 0.4s;
-  width: 100%;
+  
+  font-size: 30px;
+  color: white;
+  justify-content: center;
 }
 
 #newButton {
@@ -78,15 +84,31 @@ li {
   background-color: coral;
   border-radius: 12px;
   transition-duration: 0.4s;
-  width: 100%;
+  
+  font-size: 30px;
+  color: white;
 }
 
 #startButton:hover {
-  background-color: blue; /* Green */
+  background-color: rgb(203, 15, 228); /* Green */
   color: white;
 }
 
 #newButton:hover {
-  background-color: blue; 
+  background-color: rgb(203, 15, 228); 
   color: white;
+}
+
+header {
+  background-image: linear-gradient(blue, black);
+  color: aqua;
+}
+
+:hover > img {
+  color: white;
+  opacity: 70%;
+}
+
+body {
+  background-color: blue;
 }

@@ -99,3 +99,10 @@ h1 {
     justify-content: center;
 
 }
+
+
+:hover > img {
+    color: white;
+    opacity: 70%;
+
+}

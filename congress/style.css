@@ -27,3 +27,9 @@ img {
     border-color: green;
     box-shadow: 5px 5px;
 }
+
+
+:hover > img {
+    color: grey;
+
+}
